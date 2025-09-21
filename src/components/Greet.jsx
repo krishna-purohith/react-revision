@@ -1,4 +1,8 @@
-const Greet = () => {
-  return <div>Greet</div>;
+const Greet = ({ timeOfDay }) => {
+  return timeOfDay === "morning" ? (
+    <h1>Good Morning</h1>
+  ) : (
+    <h1>Good Afternoon!</h1>
+  );
 };
 export default Greet;

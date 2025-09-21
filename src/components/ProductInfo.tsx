@@ -1,5 +1,5 @@
 const ProductInfo = () => {
-  const numbers = [1, 2, 3, 4, 5, 5];
+  const numbers = [1, 2, 3, 4, 5];
   const product = {
     name: " Computer",
     price: "12343434",
@@ -17,7 +17,7 @@ const ProductInfo = () => {
       ))}
       <h3 className="">
         {numbers.map((number) => (
-          <ul key={number}>
+          <ul key={Math.random()}>
             <li className="">{number}</li>
           </ul>
         ))}
